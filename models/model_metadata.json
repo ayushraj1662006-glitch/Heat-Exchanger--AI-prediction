@@ -1,0 +1,137 @@
+{
+    "best_model_name": "Random Forest",
+    "is_noisy_mode": false,
+    "target_col": "hx_1_heat_load_kw",
+    "features": [
+        "hot_inlet_temperature_k",
+        "cold_inlet_mass_flow_kg_s",
+        "hot_outlet_pressure_pa",
+        "cold_outlet_pressure_pa",
+        "hot_outlet_mass_flow_kg_s",
+        "cold_outlet_mass_flow_kg_s",
+        "feat_thermal_interaction",
+        "feat_mass_flow_ratio",
+        "feat_hot_enthalpy_proxy",
+        "feat_cold_capacity_proxy",
+        "feat_t_hot_in_sq",
+        "feat_m_cold_sq",
+        "feat_temp_delta_ref",
+        "feat_pressure_diff_pa",
+        "feat_pressure_ratio"
+    ],
+    "num_train_samples": 8000,
+    "num_test_samples": 2000,
+    "training_timestamp": "2026-09-28 12:54:38",
+    "best_model_metrics": {
+        "MAE": 0.0537,
+        "MSE": 0.0131,
+        "RMSE": 0.1144,
+        "R2": 1.0,
+        "MAPE_pct": 0.0548,
+        "Explained_Variance": 1.0,
+        "CV_R2_Mean": 0.9999,
+        "CV_R2_Std": 0.0
+    },
+    "all_model_metrics": {
+        "Baseline (Dummy)": {
+            "MAE": 16.5747,
+            "MSE": 372.5422,
+            "RMSE": 19.3014,
+            "R2": -0.0008,
+            "MAPE_pct": 16.6122,
+            "Explained_Variance": 0.0,
+            "CV_R2_Mean": -0.001,
+            "CV_R2_Std": 0.0013
+        },
+        "Linear Regression": {
+            "MAE": 0.6633,
+            "MSE": 0.8306,
+            "RMSE": 0.9114,
+            "R2": 0.9978,
+            "MAPE_pct": 0.6493,
+            "Explained_Variance": 0.9978,
+            "CV_R2_Mean": 0.998,
+            "CV_R2_Std": 0.0002
+        },
+        "Ridge Regression": {
+            "MAE": 0.6637,
+            "MSE": 0.8354,
+            "RMSE": 0.914,
+            "R2": 0.9978,
+            "MAPE_pct": 0.6513,
+            "Explained_Variance": 0.9978,
+            "CV_R2_Mean": 0.998,
+            "CV_R2_Std": 0.0002
+        },
+        "Random Forest": {
+            "MAE": 0.0537,
+            "MSE": 0.0131,
+            "RMSE": 0.1144,
+            "R2": 1.0,
+            "MAPE_pct": 0.0548,
+            "Explained_Variance": 1.0,
+            "CV_R2_Mean": 0.9999,
+            "CV_R2_Std": 0.0
+        },
+        "Extra Trees": {
+            "MAE": 0.0319,
+            "MSE": 0.007,
+            "RMSE": 0.0839,
+            "R2": 1.0,
+            "MAPE_pct": 0.0331,
+            "Explained_Variance": 1.0,
+            "CV_R2_Mean": 1.0,
+            "CV_R2_Std": 0.0
+        },
+        "Gradient Boosting": {
+            "MAE": 0.1217,
+            "MSE": 0.0359,
+            "RMSE": 0.1894,
+            "R2": 0.9999,
+            "MAPE_pct": 0.1186,
+            "Explained_Variance": 0.9999,
+            "CV_R2_Mean": 0.9999,
+            "CV_R2_Std": 0.0
+        },
+        "HistGradientBoosting": {
+            "MAE": 0.119,
+            "MSE": 0.0347,
+            "RMSE": 0.1862,
+            "R2": 0.9999,
+            "MAPE_pct": 0.1181,
+            "Explained_Variance": 0.9999,
+            "CV_R2_Mean": 0.9999,
+            "CV_R2_Std": 0.0
+        },
+        "XGBoost": {
+            "MAE": 0.0956,
+            "MSE": 0.0221,
+            "RMSE": 0.1487,
+            "R2": 0.9999,
+            "MAPE_pct": 0.0955,
+            "Explained_Variance": 0.9999,
+            "CV_R2_Mean": 0.9999,
+            "CV_R2_Std": 0.0
+        },
+        "LightGBM": {
+            "MAE": 0.1255,
+            "MSE": 0.0396,
+            "RMSE": 0.1989,
+            "R2": 0.9999,
+            "MAPE_pct": 0.1247,
+            "Explained_Variance": 0.9999,
+            "CV_R2_Mean": 0.9999,
+            "CV_R2_Std": 0.0
+        },
+        "CatBoost": {
+            "MAE": 0.2436,
+            "MSE": 0.0983,
+            "RMSE": 0.3135,
+            "R2": 0.9997,
+            "MAPE_pct": 0.235,
+            "Explained_Variance": 0.9997,
+            "CV_R2_Mean": 0.9997,
+            "CV_R2_Std": 0.0
+        }
+    }
+}
